@@ -1,4 +1,5 @@
-Análisis de Datos sobre Educadores en República Checa y Austria
+#Análisis de Datos sobre Educadores en República Checa y Austria
+
 📌 Descripción del Proyecto
 
 Este repositorio contiene un análisis detallado de un conjunto de datos basado en encuestas realizadas a educadores en República Checa y Austria. El objetivo es procesar, limpiar y analizar la información recopilada para extraer conclusiones relevantes sobre las condiciones laborales y bienestar de los encuestados.
