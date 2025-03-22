@@ -26,6 +26,26 @@ Este archivo describe detalladamente cada variable del conjunto de datos. Incluy
 
 Este diccionario facilita la comprensión del dataset y su correcta utilización en análisis posteriores.  
 
+### **3️⃣ Data Analysis (`data_analysis.ipynb`)**  
+Este notebook documenta el proceso de análisis exploratorio y estadístico sobre el dataset de la encuesta de bienestar laboral académico en instituciones de educación superior de Austria y República Checa. Se realizan los siguientes procedimientos:  
+
+✔ **Análisis Univariado**  
+   - Exploración de la distribución de cada variable numérica mediante estadísticas descriptivas (utilizando el método `describe()`) para verificar que presentan comportamientos esperados según su naturaleza.  
+   - Visualización de distribuciones con histogramas, boxplots y curvas de densidad para evaluar la dispersión y concentración de los datos.  
+   - Revisión de variables categóricas utilizando etiquetas descriptivas, lo que facilita identificar el balance y comportamiento de cada grupo (por ejemplo, "Masculino" y "Femenino", "Austria" y "República Checa", etc.).  
+
+✔ **Análisis Multivariado**  
+   - Generación de matrices de dispersión (pairplots) que permiten observar las relaciones entre todas las variables de forma compacta.  
+   - Construcción de matrices de correlación (Pearson, Kendall y Spearman) mediante mapas de calor, aplicando máscaras y ajustes visuales para resaltar patrones sin saturar la visualización.  
+   - Evaluación de la correlación entre variables, identificando que muchas no se reflejan de forma clara en los valores de R², lo cual es importante para el desarrollo posterior de modelos estadísticos.  
+
+✔ **Evaluación y Selección de Variables**  
+   - Identificación de variables, como los ingresos en distintas divisas, que pueden generar problemas de multicolinealidad y sobreajuste debido a la alta varianza de los coeficientes. Se recomienda su omisión o transformación en el modelado.  
+   - Recomendación de trabajar inicialmente con variables categóricas decodificadas (manteniendo sus etiquetas descriptivas) para facilitar la visualización y análisis. Posteriormente, se pueden codificar para la etapa de modelación.  
+   - Realización de estadísticas agrupadas por categorías para evaluar efectos de interacción y sesgos en función del contexto socioeconómico, costumbres, género, políticas y otros factores relevantes.  
+
 ---
+
+📌 **Próximo Paso:** Si se desarrollan modelos predictivos o inferenciales, se pueden documentar en una sección adicional del repositorio. 🚀  
 
 
