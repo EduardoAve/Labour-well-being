@@ -30,7 +30,7 @@ Este diccionario describe las variables contenidas en el conjunto de datos utili
 | Academic_or_Non_Academic          | Indica si es académico (2) o no académico (1)             | Categórico   |
 | Teaching_Hours (solo académicos)  | Horas dedicadas a la enseñanza                            | Numérico     |
 | Research_Hours (solo académicos)  | Horas dedicadas a la investigación                        | Numérico     |
-| Funded_Research_Activities (solo académicos) | Actividades de investigación financiada     | Numérico     |
+| Funded_Research_Activities (solo académicos) | Hora dedicadas a actividades de investigación financiada     | Numérico     |
 | Administrative_Activities (solo académicos)  | Horas dedicadas a tareas administrativas | Numérico     |
 | Job_Category (solo no académicos) | Categoría del empleo                                      | Categórico   |
 | Highest_Education_Level (solo no académicos) | Nivel educativo más alto alcanzado         | Categórico   |
