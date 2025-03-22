@@ -7,7 +7,7 @@ Este diccionario describe las variables contenidas en el conjunto de datos utili
 | Nombre de la Variable             | Descripción                                                | Tipo de Dato |
 |-----------------------------------|------------------------------------------------------------|--------------|
 | Country                           | País de residencia del encuestado                          | Categórico   |
-| Version                           | Versión de la encuesta                                     | Numérico     |
+| Version                           | Versión de la encuesta                                     | Categórico     |
 | Gender                            | Género del encuestado                                      | Categórico   |
 | Age                               | Edad del encuestado                                        | Numérico     |
 | Marital_Status                    | Estado civil del encuestado                                | Categórico   |
