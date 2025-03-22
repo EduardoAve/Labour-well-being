@@ -18,7 +18,7 @@ Este diccionario describe las variables contenidas en el conjunto de datos utili
 | HEI_Employment_Hours              | Horas de empleo en la institución                         | Numérico     | 0 - 80 |
 | HEI_Actual_Weekly_Hours           | Horas reales trabajadas semanalmente                      | Numérico     | 0 - 80 |
 | Effort_Level                      | Nivel de esfuerzo percibido                               | Categórico   | 1-5 |
-| Effort_Percentage                 | Porcentaje de esfuerzo en el trabajo                      | Numérico     | 0 - 100 |
+| Effort_Percentage                 | Porcentaje de esfuerzo en el trabajo                      | Numérico     | Variable |
 | Income_EURO                       | Ingreso en euros                                          | Numérico     | Variable |
 | Euro_Adjusted                     | Ingreso ajustado en euros                                 | Numérico     | Variable |
 | Salary_per_Hour                   | Salario por hora                                          | Numérico     | Variable |
