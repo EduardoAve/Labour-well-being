@@ -36,11 +36,11 @@ Este diccionario describe las variables contenidas en el conjunto de datos utili
 | Highest_Education_Level (solo no académicos) | Nivel educativo más alto alcanzado         | Categórico   |
 | Career_Length_CZ (solo no académicos) | Longitud de la carrera en la República Checa | Numérico     |
 | Performance_Pressure               | Nivel de presión por desempeño                           | Categórico   |
-| Perceived_Autonomy                 | Nivel de autonomía percibida                             | Categórico   |
-| Quality_of_Leadership              | Percepción sobre la calidad del liderazgo               | Categórico   |
-| Sense_of_Community                 | Sentimiento de comunidad en el trabajo                  | Categórico   |
-| Job_Satisfaction                   | Nivel de satisfacción laboral                           | Categórico   |
-| Burnout                            | Nivel de agotamiento profesional                        | Categórico   |
+| Perceived_Autonomy                 | Nivel de autonomía percibida                             | Númerico   |
+| Quality_of_Leadership              | Percepción sobre la calidad del liderazgo               | Númerico   |
+| Sense_of_Community                 | Sentimiento de comunidad en el trabajo                  | Númerico   |
+| Job_Satisfaction                   | Nivel de satisfacción laboral                           | Númerico   |
+| Burnout                            | Nivel de agotamiento profesional                        | Númerico   |
 | Current_Position                   | Posición actual del encuestado                          | Categórico   |
 
 **Nota:** Las variables marcadas como "solo académicos" o "solo no académicos" aplican exclusivamente a esos grupos. Para el otro grupo, los valores han sido asignados como nulos.
