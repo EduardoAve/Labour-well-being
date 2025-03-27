@@ -4,10 +4,10 @@ This folder contains research papers relevant to the analysis of well-being and 
 
 ## Key Factors Influencing Well-being and Job Satisfaction
 
-- **Workload and Performance Pressure** [35]: High workloads and performance pressure are strong predictors of poor mental health, job dissatisfaction, and burnout among academic staff.
-- **Autonomy and Leadership Quality** [36]: Perceived autonomy and a positive work culture, including supportive leadership, are important predictors of job satisfaction and subjective well-being.
+- **Workload and Performance Pressure** [3,5]: High workloads and performance pressure are strong predictors of poor mental health, job dissatisfaction, and burnout among academic staff.
+- **Autonomy and Leadership Quality** [3,6]: Perceived autonomy and a positive work culture, including supportive leadership, are important predictors of job satisfaction and subjective well-being.
 - **Work-life Balance** [8]: Maintaining a good work-life balance is a significant factor influencing job satisfaction in the tertiary education sector.
-- **Demographic and Institutional Factors** [14]: Variables such as age, gender, marital status, caregiving responsibilities, and type of institution can affect job satisfaction and well-being.
+- **Demographic and Institutional Factors** [1,4]: Variables such as age, gender, marital status, caregiving responsibilities, and type of institution can affect job satisfaction and well-being.
 - **Advanced Statistical Approaches** [5,10]: Studies have utilized structural equation modeling, machine learning, and other advanced techniques to analyze the complex relationships between predictors and outcomes such as job satisfaction and burnout.
 
 ## Available Articles in This Folder
