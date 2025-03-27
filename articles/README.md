@@ -44,27 +44,6 @@ This folder contains key academic articles related to job satisfaction, workload
 - **Administrative workload negatively affects job satisfaction**, particularly in academia.
 - **Future research should explore additional psychological factors** (e.g., emotional intelligence, mindfulness) and **use mixed-method approaches**.
 
-## 🔍 Next Steps for Data Analysis
-To continue studying this dataset effectively, consider:
-
-1. **Applying PLS-SEM**:
-   - Use **SmartPLS** or **R’s "plspm" package** to analyze causal relationships.
-   - Test **mediation/moderation effects** (e.g., how job satisfaction mediates stress and turnover).
-
-2. **Exploring ANN Techniques**:
-   - Use **TensorFlow/Keras** to apply neural networks for predictive modeling.
-   - Compare ANN performance with traditional regression models.
-
-3. **Investigating New Variables**:
-   - Include **emotional intelligence, self-efficacy, and mindfulness** in future analyses.
-   - Test additional mediators/moderators (e.g., workplace policies).
-
-4. **Comparing Industries**:
-   - Extend the analysis beyond education (e.g., healthcare, corporate sectors).
-   - Evaluate **cross-country differences** in job satisfaction determinants.
-
----
-
 > **Note:** This folder serves as a reference point for ongoing research on job satisfaction and related factors. Contributions and additional literature reviews are welcome!
 
 
