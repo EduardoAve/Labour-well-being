@@ -1,51 +1,48 @@
-# **Análisis de Datos sobre Educadores en República Checa y Austria**  
+# **Data Analysis on Educators in the Czech Republic and Austria**  
 
-## 📌 **Descripción del Proyecto**  
-Este repositorio contiene un análisis detallado de un conjunto de datos basado en encuestas realizadas a educadores en República Checa y Austria. El objetivo es procesar, limpiar y analizar la información recopilada para extraer conclusiones relevantes sobre las condiciones laborales y bienestar de los encuestados.  
+## 📌 **Project Description**  
+This repository contains a detailed analysis of a dataset based on surveys conducted with educators in the Czech Republic and Austria. The objective is to process, clean, and analyze the collected information to extract relevant insights regarding the working conditions and well-being of the respondents.  
 
-## 📂 **Estructura del Repositorio**  
+## 📂 **Repository Structure**  
 
-### **1️⃣ Data Preparation (`Data_preparation.ipynb`)**  
-Este notebook documenta el proceso de limpieza y preparación de datos. Se incluyen los siguientes pasos:  
+### **1⃣ Data Preparation (`Data_preparation.ipynb`)**  
+This notebook documents the data cleaning and preparation process. The following steps are included:  
 
-✔ **Carga de datos** → Lectura del conjunto de datos original.  
-✔ **Renombrado de columnas** → Asignación de nombres más claros y representativos.  
-✔ **Tratamiento de valores nulos** → Imputación mediante media, moda y eliminación en casos necesarios.  
-✔ **Creación de variables calculadas** → Promedios de indicadores clave como autonomía percibida, presión por desempeño y satisfacción laboral.  
-✔ **Diferenciación entre académicos y no académicos** → Ajustes específicos para cada grupo.  
-✔ **Exportación del dataset limpio** → Guardado en formatos `.csv` y `.xlsx` para facilitar el análisis posterior.  
+✔ **Data Loading** → Reading the original dataset.  
+✔ **Column Renaming** → Assigning clearer and more representative names.  
+✔ **Handling Missing Values** → Imputation using mean, mode, and removal in necessary cases.  
+✔ **Creation of Calculated Variables** → Averages of key indicators such as perceived autonomy, performance pressure, and job satisfaction.  
+✔ **Differentiation Between Academic and Non-Academic Staff** → Specific adjustments for each group.  
+✔ **Exporting the Clean Dataset** → Saving in `.csv` and `.xlsx` formats for easier further analysis.  
 
-### **2️⃣ Diccionario de Datos (`data_dictionary.md`)**  
-Este archivo describe detalladamente cada variable del conjunto de datos. Incluye:  
+### **2⃣ Data Dictionary (`data_dictionary.md`)**  
+This file provides a detailed description of each variable in the dataset. It includes:  
 
-✔ **Nombre de la variable** → Tal como aparece en el dataset.  
-✔ **Descripción** → Explicación del significado de la variable.  
-✔ **Tipo de dato** → Si es numérico, categórico u ordinal.  
-✔ **Rango de valores** → Valores posibles o escala utilizada en la encuesta.  
-✔ **Consideraciones especiales** → Variables aplicables solo a académicos o no académicos.  
+✔ **Variable Name** → As it appears in the dataset.  
+✔ **Description** → Explanation of the variable’s meaning.  
+✔ **Data Type** → Whether it is numerical, categorical, or ordinal.  
+✔ **Value Range** → Possible values or scale used in the survey.  
+✔ **Special Considerations** → Variables applicable only to academic or non-academic staff.  
 
-Este diccionario facilita la comprensión del dataset y su correcta utilización en análisis posteriores.  
+This dictionary facilitates understanding of the dataset and ensures its correct use in subsequent analyses.  
 
-### **3️⃣ Data Analysis (`data_analysis.ipynb`)**  
-Este notebook documenta el proceso de análisis exploratorio y estadístico sobre el dataset de la encuesta de bienestar laboral académico en instituciones de educación superior de Austria y República Checa. Se realizan los siguientes procedimientos:  
+### **3⃣ Data Analysis (`data_analysis.ipynb`)**  
+This notebook documents the exploratory and statistical analysis process of the academic well-being survey dataset from higher education institutions in Austria and the Czech Republic. The following procedures are carried out:  
 
-✔ **Análisis Univariado**  
-   - Exploración de la distribución de cada variable numérica mediante estadísticas descriptivas (utilizando el método `describe()`) para verificar que presentan comportamientos esperados según su naturaleza.  
-   - Visualización de distribuciones con histogramas, boxplots y curvas de densidad para evaluar la dispersión y concentración de los datos.  
-   - Revisión de variables categóricas utilizando etiquetas descriptivas, lo que facilita identificar el balance y comportamiento de cada grupo (por ejemplo, "Masculino" y "Femenino", "Austria" y "República Checa", etc.).  
+✔ **Univariate Analysis**  
+   - Examination of the distribution of each numerical variable using descriptive statistics (`describe()` method) to verify expected behavior based on their nature.  
+   - Visualization of distributions using histograms, boxplots, and density curves to assess data dispersion and concentration.  
+   - Review of categorical variables using descriptive labels, making it easier to identify the balance and behavior of each group (e.g., "Male" and "Female," "Austria" and "Czech Republic," etc.).  
 
-✔ **Análisis Multivariado**  
-   - Generación de matrices de dispersión (pairplots) que permiten observar las relaciones entre todas las variables de forma compacta.  
-   - Construcción de matrices de correlación (Pearson, Kendall y Spearman) mediante mapas de calor, aplicando máscaras y ajustes visuales para resaltar patrones sin saturar la visualización.  
-   - Evaluación de la correlación entre variables, identificando que muchas no se reflejan de forma clara en los valores de R², lo cual es importante para el desarrollo posterior de modelos estadísticos.  
+✔ **Multivariate Analysis**  
+   - Generation of scatter plot matrices (pairplots) to observe relationships between all variables compactly.  
+   - Construction of correlation matrices (Pearson, Kendall, and Spearman) using heatmaps, applying masks and visual adjustments to highlight patterns without overloading the visualization.  
+   - Evaluation of variable correlation, identifying that many relationships are not clearly reflected in R² values, which is important for further statistical modeling.  
 
-✔ **Evaluación y Selección de Variables**  
-   - Identificación de variables, como los ingresos en distintas divisas, que pueden generar problemas de multicolinealidad y sobreajuste debido a la alta varianza de los coeficientes. Se recomienda su omisión o transformación en el modelado.  
-   - Recomendación de trabajar inicialmente con variables categóricas decodificadas (manteniendo sus etiquetas descriptivas) para facilitar la visualización y análisis. Posteriormente, se pueden codificar para la etapa de modelación.  
-   - Realización de estadísticas agrupadas por categorías para evaluar efectos de interacción y sesgos en función del contexto socioeconómico, costumbres, género, políticas y otros factores relevantes.  
+✔ **Variable Evaluation and Selection**  
+   - Identification of variables, such as income in different currencies, that may cause multicollinearity issues and overfitting due to high coefficient variance. Their omission or transformation in modeling is recommended.  
+   - Recommendation to initially work with decoded categorical variables (keeping their descriptive labels) to facilitate visualization and analysis. Later, they can be encoded for modeling.  
+   - Execution of grouped statistics by categories to evaluate interaction effects and biases based on socioeconomic context, customs, gender, policies, and other relevant factors.
 
----
-
-📌 **Próximo Paso:** Si se desarrollan modelos predictivos o inferenciales, se pueden documentar en una sección adicional del repositorio. 🚀  
 
 
