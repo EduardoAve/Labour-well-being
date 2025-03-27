@@ -1,19 +1,22 @@
-# Articles on Well-being and Job Satisfaction in Academia
+# Research Summary
 
-This folder contains research papers relevant to the analysis of well-being and job satisfaction among academic sector workers. Below is a summary of key findings from these studies:
+Based on the provided contexts, here is a summary of relevant research that can inform your data analysis:
 
-## Key Factors Influencing Well-being and Job Satisfaction
+## Key Factors Influencing Well-being and Job Satisfaction in the Academic Sector
 
-- **Workload and Performance Pressure** [3,5]: High workloads and performance pressure are strong predictors of poor mental health, job dissatisfaction, and burnout among academic staff.
-- **Autonomy and Leadership Quality** [3,6]: Perceived autonomy and a positive work culture, including supportive leadership, are important predictors of job satisfaction and subjective well-being.
-- **Work-life Balance** [8]: Maintaining a good work-life balance is a significant factor influencing job satisfaction in the tertiary education sector.
-- **Demographic and Institutional Factors** [1,4]: Variables such as age, gender, marital status, caregiving responsibilities, and type of institution can affect job satisfaction and well-being.
-- **Advanced Statistical Approaches** [5,10]: Studies have utilized structural equation modeling, machine learning, and other advanced techniques to analyze the complex relationships between predictors and outcomes such as job satisfaction and burnout.
+- **Workload and performance pressure:** [35] High workloads and performance pressure are robust predictors of poor mental health, job dissatisfaction, and burnout among academic staff.
+- **Autonomy and leadership quality:** [36] Perceived autonomy and positive work culture, including supportive leadership, are important predictors of job satisfaction and subjective well-being.
+- **Work-life balance:** [8] Work-life balance is a significant predictor of job satisfaction in the tertiary education sector.
+- **Demographic and institutional factors:** [14] Factors such as age, gender, marital status, caregiving responsibilities, and type of institution can influence job satisfaction and well-being.
+- **Advanced statistical approaches:** [510] Studies have used structural equation modeling, machine learning, and other advanced techniques to model the complex relationships between predictors and outcomes like job satisfaction and burnout.
 
-## Available Articles in This Folder
+## References
 
-- **[Sinniah et al.](/articles/sinniah.pdf)** [5]: Discusses statistical modeling techniques for understanding job satisfaction predictors.
-- **[Anees et al.](/articles/anees.pdf)** [10]: Explores machine learning approaches for analyzing well-being and job satisfaction in academia.
+1. [Szromek](./szromek.pdf)
+5. [Sinniah](./sinniah.pdf)
+10. [Anees](./anees.pdf)
 
-More articles will be added as they are uploaded. Each article contributes valuable insights into the determinants of job satisfaction and well-being in higher education institutions.
+*More references will be added as the corresponding PDFs are uploaded.*
+
+
 
