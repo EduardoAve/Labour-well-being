@@ -1,53 +1,54 @@
-# Diccionario de Datos del Conjunto de Datos de Encuesta
+# Survey Dataset Data Dictionary
 
-Este documento describe las variables contenidas en el conjunto de datos de la encuesta. La información se basa en un análisis descriptivo inicial.
+This document describes the variables contained in the survey dataset. The information is based on an initial descriptive analysis and provided column details.
 
-**Número total de observaciones:** 2748
+**Total number of observations:** 2748
 
-## Descripción de Variables
+## Variable Descriptions
 
-| Nombre de la Variable             | Descripción                                                                 | Tipo de Dato | Valores/Rango          | Notas                                     |
-|-----------------------------------|-----------------------------------------------------------------------------|--------------|------------------------|-------------------------------------------|
-| `Country`                         | País de residencia del encuestado (codificado numéricamente)                | Categórico   | 1, 2                   |                                           |
-| `Version`                         | Versión de la encuesta utilizada (codificada numéricamente)                 | Categórico   | 1 - 4                  |                                           |
-| `Gender`                          | Género autopercibido del encuestado                                         | Categórico   | 1=Masculino, 2=Femenino, 3=Otro |                                           |
-| `Age`                             | Edad del encuestado en años                                                 | Numérico     | 18 - 84                |                                           |
-| `Marital_Status`                  | Estado civil del encuestado (codificado numéricamente)                      | Categórico   | 1 - 6                  | Contiene valores nulos (28)               |
-| `Care_Responsibilities`           | Responsabilidades de cuidado del encuestado (codificado numéricamente)      | Categórico   | 1 - 4                  | Contiene valores nulos (19)               |
-| `HEI_Type`                        | Tipo de institución de educación superior (codificado numéricamente)        | Categórico   | 1 - 8                  |                                           |
-| `Faculty_Subject_Area`            | Área temática principal de la facultad (codificada numéricamente)           | Categórico   | 1 - 13                 | Contiene valores nulos (28)               |
-| `Employment_Contract_Duration`    | Duración del contrato de empleo (codificada numéricamente)                  | Categórico   | 1 - 7                  | Contiene valores nulos (3)                |
-| `HEI_Employment_Hours`            | Horas de empleo semanales según contrato en la institución de educación superior | Numérico     | 0.5 - 80               |                                           |
-| `HEI_Actual_Weekly_Hours`         | Horas reales trabajadas semanalmente en la institución                      | Numérico     | 0 - 80* | *Rango basado en diccionario original     |
-| `Effort_Level`                    | Nivel de esfuerzo percibido en el trabajo (escala Likert)                   | Categórico   | 1 - 5* | *Rango basado en diccionario original     |
-| `Effort_Percentage`               | Porcentaje estimado de esfuerzo dedicado al trabajo                         | Numérico     | Variable* | *Rango basado en diccionario original     |
-| `Income_EURO`                     | Ingreso mensual o anual en Euros (sin ajustar)                              | Numérico     | Variable* | *Rango basado en diccionario original     |
-| `Euro_Adjusted`                   | Ingreso ajustado en Euros (posiblemente por PPP o inflación)                | Numérico     | Variable* | *Rango basado en diccionario original     |
-| `Salary_per_Hour`                 | Salario calculado por hora trabajada                                        | Numérico     | Variable* | *Rango basado en diccionario original     |
-| `Salary_Effort_per_Hour`          | Salario por hora ajustado por el nivel de esfuerzo percibido                | Numérico     | Variable* | *Rango basado en diccionario original     |
-| `Leadership_Position`             | Indica si el encuestado ocupa un puesto de liderazgo                        | Categórico   | 0=No, 1=Sí* | *Rango basado en diccionario original     |
-| `Policy_Influence`                | Nivel percibido de influencia en las políticas institucionales (escala Likert) | Categórico   | 1 - 5* | *Rango basado en diccionario original     |
-| `Other_Paid_Job`                  | Indica si el encuestado tiene otro trabajo remunerado                       | Categórico   | 0=No, 1=Sí* | *Rango basado en diccionario original     |
-| `Other_Job_Weekly_Hours_1`        | Horas semanales trabajadas en el otro empleo remunerado                     | Numérico     | 0 - 80* | *Rango basado en diccionario original     |
-| `Academic_or_Non_Academic`        | Clasificación del puesto del encuestado                                     | Categórico   | 1=No académico, 2=Académico* | *Rango basado en diccionario original     |
-| `Teaching_Hours`                  | Horas semanales dedicadas a la enseñanza                                    | Numérico     | 0 - 75                 | Solo aplica a personal académico (n=2150) |
-| `Research_Hours`                  | Horas semanales dedicadas a la investigación                                | Numérico     | 0 - 75                 | Solo aplica a personal académico (n=2150) |
-| `Funded_Research_Activities`      | Horas semanales dedicadas a actividades de investigación financiadas        | Numérico     | 0 - 50                 | Solo aplica a personal académico (n=2150) |
-| `Administrative_Activities`       | Horas semanales dedicadas a tareas administrativas                          | Numérico     | 0 - 80                 | Solo aplica a personal académico (n=2150) |
-| `Job_Category`                    | Categoría específica del empleo                                             | Categórico   | Variable* | Solo aplica a personal no académico* |
-| `Highest_Education_Level`         | Nivel educativo más alto alcanzado                                          | Categórico   | Variable* | Solo aplica a personal no académico* |
-| `Career_Length_CZ`                | Duración de la carrera profesional en la República Checa (en años)          | Numérico     | Variable* | Solo aplica a personal no académico* |
-| `Performance_Pressure`            | Nivel de presión por desempeño percibido (escala Likert)                    | Numérico     | 1 - 5                  | Contiene valores nulos (8)                |
-| `Perceived_Autonomy`              | Nivel de autonomía percibida en el trabajo (escala Likert)                  | Numérico     | 1 - 5                  | Contiene valores nulos (48)               |
-| `Quality_of_Leadership`           | Percepción sobre la calidad del liderazgo en la institución (escala Likert) | Numérico     | 1 - 5                  | Contiene valores nulos (16)               |
-| `Sense_of_Community`              | Sentimiento de comunidad en el lugar de trabajo (escala Likert)             | Numérico     | 1 - 5                  | Contiene valores nulos (1)                |
-| `Job_Satisfaction`                | Nivel general de satisfacción laboral (escala Likert)                       | Numérico     | 1 - 5                  | Contiene valores nulos (3)                |
-| `Burnout`                         | Nivel de agotamiento profesional (escala Likert)                            | Numérico     | 1 - 7                  | Contiene valores nulos (6)                |
-| `Current_Position`                | Posición o rol actual del encuestado (codificado numéricamente)             | Categórico   | 0 - 13                 |                                           |
+| Variable Name                 | Description                                                                 | Data Type   | Values/Range           | Notes                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|-------------|------------------------|-----------------------------------------------------------------------|
+| `Country`                     | Respondent's country of residence (coded numerically)                       | Categorical | 1, 2                   | Data Type: int64. Unique values: 2. Non-null: 2748.                  |
+| `Version`                     | Version of the survey used (coded numerically)                              | Categorical | 1 - 4                  | Data Type: int64. Unique values: 4. Non-null: 2748.                  |
+| `Gender`                      | Self-perceived gender of the respondent (coded numerically)                 | Categorical | 1=Male, 2=Female, 3=Other | Data Type: float64. Unique values: 3. Non-null: 2748.                 |
+| `Age`                         | Age of the respondent in years                                              | Numeric     | 18 - 84                | Data Type: float64. Unique values: 61. Non-null: 2748.                 |
+| `Marital_Status`              | Marital status of the respondent (coded numerically)                      | Categorical | 1 - 6                  | Data Type: float64. Unique values: 6. Null values: 28 (2748-2720).   |
+| `Care_Responsibilities`       | Care responsibilities of the respondent (coded numerically)                 | Categorical | 1 - 4                  | Data Type: float64. Unique values: 4. Null values: 19 (2748-2729).   |
+| `HEI_Type`                    | Type of higher education institution (coded numerically)                    | Categorical | 1 - 8                  | Data Type: float64. Unique values: 8. Non-null: 2748.                  |
+| `Faculty_Subject_Area`        | Main subject area of the faculty (coded numerically)                        | Categorical | 1 - 13                 | Data Type: float64. Unique values: 13. Null values: 28 (2748-2720).  |
+| `Employment_Contract_Duration`| Duration of the employment contract (coded numerically)                     | Categorical | 1 - 7                  | Data Type: float64. Unique values: 7. Null values: 3 (2748-2745).    |
+| `HEI_Employment_Hours`        | Weekly employment hours as per contract at the HEI                          | Numeric     | 0.5 - 80               | Data Type: float64. Unique values: 68. Non-null: 2748.                 |
+| `HEI_Actual_Weekly_Hours`     | Actual weekly hours worked at the HEI                                       | Numeric     | 0 - 80 (approx)        | Data Type: float64. Unique values: 97. Non-null: 2748. Max needs confirmation. |
+| `Effort_Level`                | Perceived effort level at work (coded numerically, likely Likert scale)     | Categorical | 1 - 3                  | Data Type: float64. Unique values: 3. Non-null: 2748.                 |
+| `Effort_Percentage`           | Estimated percentage of effort dedicated to work                            | Numeric     | Variable               | Data Type: float64. Unique values: 128. Non-null: 2748. Range unclear. |
+| `Income_EURO`                 | Monthly or annual income in Euros (unadjusted)                              | Numeric     | Variable               | Data Type: float64. Unique values: 572. Non-null: 2748. Range unclear. |
+| `Euro_Adjusted`               | Adjusted income in Euros (possibly for PPP or inflation)                    | Numeric     | Variable               | Data Type: float64. Unique values: 573. Non-null: 2748. Range unclear. |
+| `Salary_per_Hour`             | Calculated salary per hour worked                                           | Numeric     | Variable               | Data Type: float64. Unique values: 707. Non-null: 2748. Range unclear. |
+| `Salary_Effort_per_Hour`      | Salary per hour adjusted by perceived effort level                          | Numeric     | Variable               | Data Type: float64. Unique values: 962. Non-null: 2748. Range unclear. |
+| `Leadership_Position`         | Indicates if the respondent holds a leadership position (coded numerically) | Categorical | 1 - 4                  | Data Type: float64. Unique values: 4. Null values: 16 (2748-2732).   |
+| `Policy_Influence`            | Perceived level of influence on institutional policies (coded numerically)  | Categorical | 1 - 5                  | Data Type: float64. Unique values: 5. Null values: 7 (2748-2741).    |
+| `Other_Paid_Job`              | Indicates if the respondent has another paid job (coded numerically)        | Categorical | 1 - 7                  | Data Type: float64. Unique values: 7. Non-null: 2748. Meaning of codes > 1 needs clarification. |
+| `Other_Job_Weekly_Hours_1`    | Weekly hours worked in the other paid job                                   | Numeric     | 0 - 80 (approx)        | Data Type: float64. Unique values: 58. Non-null: 2748. Max needs confirmation. |
+| `Academic_or_Non_Academic`    | Classification of the respondent's position                                 | Categorical | 1=Non-academic, 2=Academic | Data Type: int64. Unique values: 2. Non-null: 2748.                  |
+| `Teaching_Hours`              | Weekly hours dedicated to teaching                                          | Numeric     | 0 - 75                 | Data Type: float64. Unique values: 70. Applies only to academic staff (n=2150). |
+| `Research_Hours`              | Weekly hours dedicated to research                                          | Numeric     | 0 - 75                 | Data Type: float64. Unique values: 74. Applies only to academic staff (n=2150). |
+| `Funded_Research_Activities`  | Weekly hours dedicated to funded research activities                        | Numeric     | 0 - 50                 | Data Type: float64. Unique values: 43. Applies only to academic staff (n=2150). |
+| `Administrative_Activities`   | Weekly hours dedicated to administrative tasks                              | Numeric     | 0 - 80                 | Data Type: float64. Unique values: 61. Applies only to academic staff (n=2150). |
+| `Job_Category`                | Specific job category (coded numerically)                                   | Categorical | Variable               | Data Type: float64. Unique values: 14. Applies only to non-academic staff (n=591). |
+| `Highest_Education_Level`     | Highest education level attained (coded numerically)                        | Categorical | Variable               | Data Type: float64. Unique values: 8. Applies only to non-academic staff (n=538). |
+| `Career_Length_CZ`            | Length of professional career in the Czech Republic (in years)              | Numeric     | Variable               | Data Type: float64. Unique values: 52. Applies only to non-academic staff (n=540). |
+| `Performance_Pressure`        | Perceived level of performance pressure (Likert scale)                      | Numeric     | 1 - 5                  | Data Type: float64. Unique values: 5. Null values: 8 (2748-2740).    |
+| `Perceived_Autonomy`          | Perceived level of autonomy at work (Likert scale)                          | Numeric     | 1 - 5                  | Data Type: float64. Unique values: 25. Null values: 48 (2748-2700).  |
+| `Quality_of_Leadership`       | Perception of leadership quality in the institution (Likert scale)          | Numeric     | 1 - 5                  | Data Type: float64. Unique values: 25. Null values: 16 (2748-2732).  |
+| `Sense_of_Community`          | Feeling of community in the workplace (Likert scale)                        | Numeric     | 1 - 5                  | Data Type: float64. Unique values: 16. Null values: 1 (2748-2747).   |
+| `Job_Satisfaction`            | Overall level of job satisfaction (Likert scale)                            | Numeric     | 1 - 5                  | Data Type: float64. Unique values: 31. Null values: 3 (2748-2745).    |
+| `Burnout`                     | Level of professional burnout (Likert scale)                                | Numeric     | 1 - 7                  | Data Type: float64. Unique values: 30. Null values: 6 (2748-2742).    |
+| `Current_Position`            | Current position or role of the respondent (coded numerically)              | Categorical | 0 - 13                 | Data Type: float64. Unique values: 14. Non-null: 2748.                 |
 
-**Notas Generales:**
+**General Notes:**
 
-* Las variables marcadas con `*` en la columna "Valores/Rango" o "Notas" no estaban presentes en el resumen estadístico (`describe()`) proporcionado. Sus rangos y descripciones se basan en el diccionario original y podrían necesitar verificación adicional.
-* Las variables indicadas como "Solo aplica a personal académico" o "Solo aplica a personal no académico" tendrán valores nulos (NaN) para los encuestados del grupo opuesto.
-* La columna "Valores/Rango" para variables categóricas muestra los códigos numéricos encontrados en los datos. Se recomienda consultar la documentación original de la encuesta para obtener las etiquetas exactas de cada código si es necesario.
-* La presencia de valores nulos se indica cuando el conteo (`count`) de la variable en el análisis descriptivo es menor que el número total de observaciones (2748). El número entre paréntesis es la cantidad de valores nulos.
+* Variables indicated as "Applies only to academic staff" or "Applies only to non-academic staff" will have null (NaN) values for respondents in the other group. The count `n` indicates the number of non-null values for that specific group.
+* The "Values/Range" column for categorical variables shows the range or specific codes found in the data. Consulting the original survey documentation is recommended for exact labels corresponding to each code.
+* The storage data type (e.g., `float64`, `int64`) is listed in the Notes. Note that conceptually categorical variables might be stored as floats, often due to the presence of NaN values.
+* Null value counts are calculated as Total Observations (2748) minus the Non-null count provided for each variable.
+* Ranges for some numeric variables (marked "Variable" or "approx") are based on initial analysis or examples provided and might require further investigation for precise minimum/maximum values.
