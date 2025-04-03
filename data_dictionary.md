@@ -8,11 +8,11 @@ This document describes the variables contained in the survey dataset. The infor
 
 | Variable Name                 | Description                                                                 | Data Type   | Values/Range           | Notes                                                                 |
 |-------------------------------|-----------------------------------------------------------------------------|-------------|------------------------|-----------------------------------------------------------------------|
-| `Country`                     | Respondent's country of residence (coded numerically)                       | Categorical | 1, 2                   | Data Type: int64. Unique values: 2. Non-null: 2748.                  |
+| `Country`                     | Respondent's country of residence (coded numerically)                       | Categorical | 1, 2                   | Data Type: int64. Unique: 2. Non-null: 2748. **Codes: 1=Austria, 2=Czech Republic.** |
 | `Version`                     | Version of the survey used (coded numerically)                              | Categorical | 1 - 4                  | Data Type: int64. Unique values: 4. Non-null: 2748.                  |
 | `Gender`                      | Self-perceived gender of the respondent (coded numerically)                 | Categorical | 1=Male, 2=Female, 3=Other | Data Type: float64. Unique values: 3. Non-null: 2748.                 |
 | `Age`                         | Age of the respondent in years                                              | Numeric     | 18 - 84                | Data Type: float64. Unique values: 61. Non-null: 2748.                 |
-| `Marital_Status`              | Marital status of the respondent (coded numerically)                      | Categorical | 1 - 6                  | Data Type: float64. Unique values: 6. Null values: 28 (2748-2720).   |
+| `Marital_Status`              | Marital status of the respondent (coded numerically)                      | Categorical | 1 - 6                  | Data Type: float64. Unique: 6. Nulls: 28. **Codes: 1=Married/Registered Partnership, 2=In a relationship (unmarried), 3=Single, 4=Divorced, 5=Widowed.** (Meaning for 6 TBC) |
 | `Care_Responsibilities`       | Care responsibilities of the respondent (coded numerically)                 | Categorical | 1 - 4                  | Data Type: float64. Unique values: 4. Null values: 19 (2748-2729).   |
 | `HEI_Type`                    | Type of higher education institution (coded numerically)                    | Categorical | 1 - 8                  | Data Type: float64. Unique values: 8. Non-null: 2748.                  |
 | `Faculty_Subject_Area`        | Main subject area of the faculty (coded numerically)                        | Categorical | 1 - 13                 | Data Type: float64. Unique values: 13. Null values: 28 (2748-2720).  |
@@ -52,3 +52,5 @@ This document describes the variables contained in the survey dataset. The infor
 * The storage data type (e.g., `float64`, `int64`) is listed in the Notes. Note that conceptually categorical variables might be stored as floats, often due to the presence of NaN values.
 * Null value counts are calculated as Total Observations (2748) minus the Non-null count provided for each variable.
 * Ranges for some numeric variables (marked "Variable" or "approx") are based on initial analysis or examples provided and might require further investigation for precise minimum/maximum values.
+* TBC = To Be Confirmed.
+
