@@ -1,0 +1,22 @@
+1) Independent variables (Working conditions):
+Avg_Work_Hours_HE
+Income EURO
+Effort [%]
+Policy_Influence
+Academic_Resources
+Performance_Pressure                                        
+Perceived_Autonomy
+Quality_Leadership
+Sense_Community
+
+2) Motivation 1 (Intrinsic motivation)
+
+3) Motivation 2 (Extrinsic material)
+
+4) Vulnerabilidad
+
+5) Outcome variable: Burnout
+
+
+
+
