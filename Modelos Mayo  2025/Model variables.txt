@@ -1,0 +1,47 @@
+Componentes del Modelo 1:
+
+1) Independent variables (Working conditions):
+Avg_Work_Hours_HE
+Income EURO
+Effort [%]
+Policy_Influence
+Academic_Resources
+Performance_Pressure                                        
+Perceived_Autonomy
+Quality_Leadership
+Sense_Community
+
+Nota: Estar pendiente de posible colinealidad entre estas variables independientes.
+
+2) Motivation 1 y 2
+
+la motivación 1 va a ser la motivación controlada ("controlled motivation") y la motivación 2 va a ser la motivación autónoma ("autonomous motivation").
+
+* La motivación controlada va a ser el promedio de las siguientes motivaciones:
+Extrinsic-Social, Extrinsic-Material e Introjected. Se llama "controlled" porque refejan la presión extrínsica social, material en individual que "controlan" la motivación.
+
+* La motivación autónoma va a ser el promedio de la siguientes motivaciones:
+Identified e Intrinsic. Se llama "autónoma" porque son motivaciones personales positivas que reflejan autonomía.
+
+3) Vulnerabilidad
+
+4) Outcome variable: Burnout
+
+El diagrama de este modelo está en el archivo modelo 1.
+
+Modelo 2:
+
+El segundo modelo a considerar es el mismo que el modelo anterior (con motivaciones 1 y 2 siendo las motivaciones controlada y la autónoma) pero también incluyendo una influencia directa de las condiciones de trabajo a la vulnerabilidad.
+
+El diagrama de este modelo está en el archivo modelo2.
+
+La idea es ver cuál de estos dos modelos tiene mejor desempeño. Por supuesto, ambos modelos tienen que ser validados primero (la mediación).
+
+
+
+
+
+
+
+
+
