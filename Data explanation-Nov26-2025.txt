@@ -1,0 +1,26 @@
+Data explanation:
+
+1) The file "Final_Dataset" in folder 01_raw-00 is the raw data with 2,747 individuals.
+
+2) The data is then reduced to 2,708 individuals after imputation of the 44 vulnerability questions, and taken out individuals who did not respond more than 5 questions. This process is done through the notebook vulnerability_imputation.ipynb, from which we obtain the file "dataset_vulnerability_new.xls", which we renamed "dataset_vulnerability_after imputation_before vulnerability score.xlsx" and is in the folder 01_raw-01.
+
+3) We gave the file "dataset_vulnerability_after imputation_before vulnerability score.xlsx" to Ivana (under another name on April 25, 2025), so that she could calculate the vulnerability scores. She did, and then she gave us back the file that is in the folder 01_raw-01:
+"dataset_vulnerability_scores_after_imputation"
+
+4) Then we use the notebook "data_preparation.ipynb" to obtain the final data set processed named
+"Final_Dataset_Processed", which is in the data folder called "02_processed". Note that the number of columns have now changed from 132 to 59, and the number of individuals is now 1,949 (For example, outliers were taken out among other considerations).
+
+5) Then, the data "Final_Data_Processed.csv" is run in the notebooks (in the folder "/notebooks
+/analysis/"): 
+cz_academic_data_analysis.ipynb
+at_academic_data_analysis.ipynb
+data_analysis.ipynb (full population data analysis)
+non_academic_data_analysis.ipynb (non-academic for both countries)
+for the exploratory data analysis (EDA), i.e., descriptive statistics.
+
+6) Also, the data "Final_Data_Processed.csv" is run in the notebooks (in the folder /models...):
+SEM_Academic_Cezch.ipynb (it is mispelled, but left that way!)
+SEM_non_Academic_Cezch.ipynb (it is mispelled, but left that way!)
+SEM_Academic_Austria.ipynb
+SEM_non_Academic_Austria.ipynb
+for all the corresponding path modelling analysis.
